@@ -6,8 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4946496CA12470301D1BD276 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB59CE181775CE9FE2C953D4 /* Pods_NewsApp.framework */; };
+		5A3AE85B2D8E48840073C5C2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A3AE85A2D8E48840073C5C2 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A3AE8642D8E4E880073C5C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A1E97DD2D8D975900C1A1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A1E97E42D8D975900C1A1D7;
+			remoteInfo = NewsApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1137D621E1C7EC875A571F50 /* Pods-NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.debug.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5A1E97E52D8D975900C1A1D7 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3AE85A2D8E48840073C5C2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5A3AE8602D8E4E880073C5C2 /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB59CE181775CE9FE2C953D4 /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F363B61F718ADCD220AE4717 /* Pods-NewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.release.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +49,23 @@
 			path = NewsApp;
 			sourceTree = "<group>";
 		};
+		5A3AE8612D8E4E880073C5C2 /* NewsAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NewsAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5A1E97E22D8D975900C1A1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4946496CA12470301D1BD276 /* Pods_NewsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3AE85D2D8E4E880073C5C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,11 +75,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CEAB47C612412E643774CDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1137D621E1C7EC875A571F50 /* Pods-NewsApp.debug.xcconfig */,
+				F363B61F718ADCD220AE4717 /* Pods-NewsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		47B33699A80AF58BBCB247C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB59CE181775CE9FE2C953D4 /* Pods_NewsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A1E97DC2D8D975900C1A1D7 = {
 			isa = PBXGroup;
 			children = (
 				5A1E97E72D8D975900C1A1D7 /* NewsApp */,
+				5A3AE8612D8E4E880073C5C2 /* NewsAppTests */,
 				5A1E97E62D8D975900C1A1D7 /* Products */,
+				1CEAB47C612412E643774CDC /* Pods */,
+				47B33699A80AF58BBCB247C2 /* Frameworks */,
+				5A3AE85A2D8E48840073C5C2 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1E97E52D8D975900C1A1D7 /* NewsApp.app */,
+				5A3AE8602D8E4E880073C5C2 /* NewsAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A1E97F82D8D975E00C1A1D7 /* Build configuration list for PBXNativeTarget "NewsApp" */;
 			buildPhases = (
+				07A4670B70855732556310F8 /* [CP] Check Pods Manifest.lock */,
 				5A1E97E12D8D975900C1A1D7 /* Sources */,
 				5A1E97E22D8D975900C1A1D7 /* Frameworks */,
 				5A1E97E32D8D975900C1A1D7 /* Resources */,
+				C6DD40EBB4CD246F685B01BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,11 +134,32 @@
 				5A1E97E72D8D975900C1A1D7 /* NewsApp */,
 			);
 			name = NewsApp;
-			packageProductDependencies = (
-			);
 			productName = NewsApp;
 			productReference = 5A1E97E52D8D975900C1A1D7 /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5A3AE85F2D8E4E880073C5C2 /* NewsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3AE8662D8E4E880073C5C2 /* Build configuration list for PBXNativeTarget "NewsAppTests" */;
+			buildPhases = (
+				5A3AE85C2D8E4E880073C5C2 /* Sources */,
+				5A3AE85D2D8E4E880073C5C2 /* Frameworks */,
+				5A3AE85E2D8E4E880073C5C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3AE8652D8E4E880073C5C2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5A3AE8612D8E4E880073C5C2 /* NewsAppTests */,
+			);
+			name = NewsAppTests;
+			packageProductDependencies = (
+			);
+			productName = NewsAppTests;
+			productReference = 5A3AE8602D8E4E880073C5C2 /* NewsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +173,10 @@
 				TargetAttributes = {
 					5A1E97E42D8D975900C1A1D7 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					5A3AE85F2D8E4E880073C5C2 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5A1E97E42D8D975900C1A1D7;
 					};
 				};
 			};
@@ -113,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				5A1E97E42D8D975900C1A1D7 /* NewsApp */,
+				5A3AE85F2D8E4E880073C5C2 /* NewsAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -122,10 +205,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3AE85B2D8E48840073C5C2 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3AE85E2D8E4E880073C5C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07A4670B70855732556310F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DD40EBB4CD246F685B01BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsApp/Pods-NewsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsApp/Pods-NewsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsApp/Pods-NewsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A1E97E12D8D975900C1A1D7 /* Sources */ = {
@@ -135,16 +268,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A3AE85C2D8E4E880073C5C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A3AE8652D8E4E880073C5C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A1E97E42D8D975900C1A1D7 /* NewsApp */;
+			targetProxy = 5A3AE8642D8E4E880073C5C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5A1E97F92D8D975E00C1A1D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1137D621E1C7EC875A571F50 /* Pods-NewsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -167,11 +317,13 @@
 		};
 		5A1E97FA2D8D975E00C1A1D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F363B61F718ADCD220AE4717 /* Pods-NewsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -311,6 +463,40 @@
 			};
 			name = Release;
 		};
+		5A3AE8672D8E4E880073C5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interview.NewsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NewsApp";
+			};
+			name = Debug;
+		};
+		5A3AE8682D8E4E880073C5C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interview.NewsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NewsApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -328,6 +514,15 @@
 			buildConfigurations = (
 				5A1E97F92D8D975E00C1A1D7 /* Debug */,
 				5A1E97FA2D8D975E00C1A1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3AE8662D8E4E880073C5C2 /* Build configuration list for PBXNativeTarget "NewsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3AE8672D8E4E880073C5C2 /* Debug */,
+				5A3AE8682D8E4E880073C5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
